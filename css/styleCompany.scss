@@ -68,26 +68,17 @@
                 margin-bottom: 20px;
             }
         }
-        ul {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-            li {
-                font-size: 18px;
-                line-height: 120%;
-                font-weight: 500;
-                padding-left: 0px;
-                margin-bottom: 0px;
-                @media (max-width:575px) { 
-                    font-size: 16px;
-                }
-
-                &:not(:first-child) {
-                    margin-top: .75em;
-                }
-                &::before {
-                    content: unset;
-                }
+        p {
+            color: inherit;
+            font-size: 18px;
+            line-height: 120%;
+            font-weight: 500;
+            margin-bottom: .75em;
+            &:last-child {
+                margin-bottom: 0em;
+            }
+            @media (max-width:575px) { 
+                font-size: 16px;
             }
         }
     }
@@ -206,25 +197,24 @@
             margin: 0px !important;
             padding: 0 50px 0 0;
             position: relative;
-            &:last-child {
-                padding-right: 0px;
-            }
             &:before {
                 content: unset;
             }
-            &:not(:last-child)::after {
-                content: "🡢";
-                color: inherit;
-                font-size: .8em;
-                line-height: 100%;
-                height: auto;
-                width: auto;
+            svg {
+                height: 18px;
+                width: 18px;
                 opacity: 1;
                 position: absolute;
                 top: 50%;
-                transform: translateY(-40%);
-                right: 20px;
+                transform: translateY(-50%);
+                right: 16px;
                 z-index: 1;
+            }
+            &:last-child {
+                padding-right: 0px;
+                svg {
+                    display: none;
+                }
             }
         }
         &__link {
