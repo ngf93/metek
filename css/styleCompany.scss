@@ -193,7 +193,7 @@
         white-space: nowrap;
         &__item {
             color: inherit;
-            height: 1.2rem;
+            height: fit-content;
             margin: 0px !important;
             padding: 0 50px 0 0;
             position: relative;
@@ -219,7 +219,7 @@
         }
         &__link {
             color: inherit;
-            display: inline-block;
+            display: block;
             font: 400 14px / 20px pragmatica, sans-serif;
             span {
                 display: block;
