@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'pragmatica';
+    src: local('Pragmatica Book'), local('Pragmatica-Book'),
+        url('Pragmatica-Book.woff2') format('woff2'),
+        url('Pragmatica-Book.woff') format('woff'),
+        url('Pragmatica-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pragmatica';
+    src: local('Pragmatica Medium'), local('Pragmatica-Medium'),
+        url('Pragmatica-Medium.woff2') format('woff2'),
+        url('Pragmatica-Medium.woff') format('woff'),
+        url('Pragmatica-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pragmatica';
+    src: local('Pragmatica Bold'), local('Pragmatica-Bold'),
+        url('Pragmatica-Bold.woff2') format('woff2'),
+        url('Pragmatica-Bold.woff') format('woff'),
+        url('Pragmatica-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
